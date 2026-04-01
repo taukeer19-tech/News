@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Build output
+.next/
+out/
+
+# Environment variables — NEVER commit these
+.env
+.env.local
+.env.production
+
+# Local dev database (JSON mock — DO NOT deploy)
+tmp/local_db.json
+tmp/*.db
+prisma/dev.db
+prisma/*.db
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Debug logs
+*.log
+npm-debug.log*
+
+# Vercel
+.vercel
+
+# Upload artifacts (should use cloud storage in production)
+public/uploads/*
+!public/uploads/.gitkeep

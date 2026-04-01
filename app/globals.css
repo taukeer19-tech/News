@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+
+/* -----------------------------------------
+   Theme: Aesthetic (Clean Light Mode)
+----------------------------------------- */
+html[data-theme='aesthetic'] body {
+  background-color: #f8fafc !important; /* slate-50 */
+  color: #0f172a !important; /* slate-900 */
+}
+
+html[data-theme='aesthetic'] .bg-slate-950 {
+    background-color: #f8fafc !important;
+}
+
+html[data-theme='aesthetic'] .theme-blobs {
+  display: none !important;
+}
+
+/* Glass Panels -> Solid Clean Panels */
+html[data-theme='aesthetic'] .bg-white\/10,
+html[data-theme='aesthetic'] .bg-white\/5,
+html[data-theme='aesthetic'] .bg-\[\#0F172A\]\/80,
+html[data-theme='aesthetic'] .bg-\[\#1A1A2E\]\/95,
+html[data-theme='aesthetic'] .bg-\[\#0F172A\]\/90,
+html[data-theme='aesthetic'] .bg-black\/40,
+html[data-theme='aesthetic'] .bg-black\/30,
+html[data-theme='aesthetic'] .bg-black\/20 {
+  background-color: #ffffff !important;
+}
+
+html[data-theme='aesthetic'] .backdrop-blur-xl,
+html[data-theme='aesthetic'] .backdrop-blur-md,
+html[data-theme='aesthetic'] .backdrop-blur-sm {
+  backdrop-filter: none !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+html[data-theme='aesthetic'] .border-white\/20,
+html[data-theme='aesthetic'] .border-white\/10,
+html[data-theme='aesthetic'] .border-white\/5 {
+  border-color: #e2e8f0 !important; /* slate-200 */
+}
+
+/* Text Colors */
+html[data-theme='aesthetic'] .text-white {
+  color: #0f172a !important; /* slate-900 */
+}
+/* Ensure buttons utilizing white text stay white on colorful backgrounds */
+html[data-theme='aesthetic'] button .text-white,
+html[data-theme='aesthetic'] .bg-indigo-500 .text-white,
+html[data-theme='aesthetic'] .bg-purple-500 .text-white,
+html[data-theme='aesthetic'] .bg-emerald-500 .text-white {
+    color: #ffffff !important;
+}
+
+html[data-theme='aesthetic'] .text-white\/70,
+html[data-theme='aesthetic'] .text-white\/60,
+html[data-theme='aesthetic'] .text-white\/50 {
+  color: #475569 !important; /* slate-600 */
+}
+
+html[data-theme='aesthetic'] .text-white\/40,
+html[data-theme='aesthetic'] .text-white\/30 {
+  color: #94a3b8 !important; /* slate-400 */
+}
+
+/* Input Fields */
+html[data-theme='aesthetic'] input,
+html[data-theme='aesthetic'] select,
+html[data-theme='aesthetic'] textarea {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+html[data-theme='aesthetic'] input:focus,
+html[data-theme='aesthetic'] select:focus,
+html[data-theme='aesthetic'] textarea:focus {
+    background-color: #ffffff !important;
+}
+
+/* TipTap Editor Prose Override */
+html[data-theme='aesthetic'] .prose-invert {
+   --tw-prose-body: #334155 !important;
+   --tw-prose-headings: #0f172a !important;
+   --tw-prose-bold: #0f172a !important;
+}
