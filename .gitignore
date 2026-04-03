@@ -30,3 +30,6 @@ npm-debug.log*
 # Upload artifacts (should use cloud storage in production)
 public/uploads/*
 !public/uploads/.gitkeep
+
+.vercel
+.env*.local
